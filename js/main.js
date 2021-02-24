@@ -10,13 +10,29 @@ let submitBtn = document.querySelector('#submit-button');
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     let inputs = document.querySelectorAll('.main__form-input');
-    if (!checkEmptyValue (inputName) || !checkEmptyValue(inputPhone) || !checkEmptyValue(inputEmail)) {
-        return
-    }
-    if (!checkEmail(inputEmail.value)) {
-        return
-    }
+    // if(inputs.forEach((item) => {
+    //     if(!checkEmptyValue(item)) {
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    // })) {
+    //     console.log('erroe')
+    // }
 
+    // for (let i = 0; i < inputs.length; i++) {
+    //     if(!)
+    // }
+
+
+    // checkEmail(inputEmail.value);
+    //
+    // // if (!checkEmptyValue (inputName) || !checkEmptyValue(inputPhone) || !checkEmptyValue(inputEmail)) {
+    // //     return
+    // // }
+    // if (!checkEmail(inputEmail.value)) {
+    //     return
+    // }
 
 })
 
