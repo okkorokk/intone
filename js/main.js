@@ -1,6 +1,20 @@
-let inputName = document.querySelector('#input-name');
-let inputPhone = document.querySelector('#input-phone');
-let inputEmail = document.querySelector('#input-email');
+let inputName = document.querySelector('#input-name'),
+    inputPhone = document.querySelector('#input-phone'),
+    inputEmail = document.querySelector('#input-email');
+let formsValid = false;
+let anchors = document.querySelectorAll('a[href*="#"]');
+anchors.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const blockID = item.getAttribute('href');
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        })
+    })
+})
+
+
 
 inputPhone.addEventListener('input', (e) => {
     e.target.value = e.target.value.replace(/[^\d]/g, '');
@@ -10,29 +24,15 @@ let submitBtn = document.querySelector('#submit-button');
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     let inputs = document.querySelectorAll('.main__form-input');
-    // if(inputs.forEach((item) => {
-    //     if(!checkEmptyValue(item)) {
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-    // })) {
-    //     console.log('erroe')
-    // }
 
-    // for (let i = 0; i < inputs.length; i++) {
-    //     if(!)
-    // }
+    inputs.forEach(item => {
+        checkEmptyValue(item);
+    })
+    checkEmail(inputEmail.value);
 
-
-    // checkEmail(inputEmail.value);
-    //
-    // // if (!checkEmptyValue (inputName) || !checkEmptyValue(inputPhone) || !checkEmptyValue(inputEmail)) {
-    // //     return
-    // // }
-    // if (!checkEmail(inputEmail.value)) {
-    //     return
-    // }
+    if(!formsValid) {
+        console.log('error');
+    }
 
 })
 
@@ -45,9 +45,9 @@ function checkEmptyValue (item) {
         setTimeout(() => {
             elem.remove();
         }, 3000)
-        return false
+        formsValid = false;
     } else {
-        return true
+        formsValid = true
     }
 }
 function checkEmail(email) {
@@ -60,8 +60,8 @@ function checkEmail(email) {
         setTimeout(() => {
             elem.remove();
         }, 3000)
-        return false
+        formsValid = false;
     } else {
-        return true
+        formsValid = true;
     }
 }
