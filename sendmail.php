@@ -45,9 +45,9 @@ $mail->Subject = 'письмо с сайта';
 $mail->msgHTML($body);
 
 if (!$mail->send()) {
-    $message = 'err';
+    $message = 'Ошибка';
 } else {
-    $message = 'ok';
+    $message = 'Данные отправлены';
 }
 
 $response = ['message' => $message];

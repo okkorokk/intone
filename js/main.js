@@ -42,10 +42,9 @@ form.addEventListener('submit', (e) => {
             .then((response) => {
                 if (response.message == 'ok') {
                     popUp.firstElementChild.firstElementChild.firstElementChild.remove();
-                    popUp.firstElementChild.firstElementChild.insertAdjacentHTML("afterbegin", `<div class="done">Готово!</div>
+                    popUp.firstElementChild.firstElementChild.insertAdjacentHTML("afterbegin",`<div class="done">Готово!</div>
                     <div class="pop-up__message">
                     В течениие 15 минут чек-лист будет отправлен Вам на почту</div>`);
-                    form.reset();
                 } else if (response == "err"){
                     popUp.firstElementChild.firstElementChild.firstElementChild.remove();
                     popUp.firstElementChild.firstElementChild.insertAdjacentHTML("afterbegin", `<div class="done">Что-то пошло не так</div>`);
