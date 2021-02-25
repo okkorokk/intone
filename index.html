@@ -156,22 +156,25 @@
                 Я или мой дежурный менеджер обязательно свяжется с вами для профессиональной консультации, совета или помощи в оформлении заказа.
             </div>
             <div class="main__form-wrapper">
-                <form class="main__form" action="" id="form">
+                <div class="main__form">
                     <div class="main__form-title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ, И МЫ  ОТПРАВИМ ЧЕК-ЛИСТ</div>
-                    <div class="main__form-item">
-                        <div class="">Введите ваше имя</div>
-                        <input class="main__form-input" id="input-name" type="text" name="name" placeholder="Иван Иванович">
-                    </div>
-                    <div class="main__form-item">
-                        <div class="main__form-subtitle">Ведите Ваш e-mail</div>
-                        <input class="main__form-input" id="input-email" type="email" name="name" placeholder="IIvanov@mail.ru">
-                    </div>
-                    <div class="main__form-item">
-                        <div class="main__form-subtitle">Введите Ваш  номер телефона</div>
-                        <input class="main__form-input" id="input-phone" type="text" name="name" placeholder="+ 7 (903) 846 17 17" >
-                    </div>
-                    <button class="button" id="submit-button" type="submit">ПОЛУЧИТЬ ЧЕК ЛИСТ</button>
-                </form>
+                    <form class="form main__form" action="#" id="form">
+                        <div class="main__form-item">
+                            <div class="">Введите ваше имя</div>
+                            <input class="main__form-input" id="input-name" type="text" name="name" placeholder="Иван Иванович">
+                        </div>
+                        <div class="main__form-item">
+                            <div class="main__form-subtitle">Ведите Ваш e-mail</div>
+                            <input class="main__form-input" id="input-email" type="email" name="email" placeholder="IIvanov@mail.ru">
+                        </div>
+                        <div class="main__form-item">
+                            <div class="main__form-subtitle">Введите Ваш  номер телефона</div>
+                            <input class="main__form-input" id="input-phone" type="text" name="phone" placeholder="+ 7 (903) 846 17 17" >
+                        </div>
+                        <button class="button" id="submit-button" type="submit">ПОЛУЧИТЬ ЧЕК ЛИСТ</button>
+                    </form>
+                </div>
+
                 <div class="main__form-aside">
                     <div class="main__form-aside-text">Заполни заявку на сайте и отправь</div>
                     <img class="main__form-aside-img" src="img/checked-form.png" alt="checked">
@@ -182,11 +185,19 @@
                     <div class="main__form-aside-text">Проведи аудит сам на основне криттериев  и вопросов от професси</div>
                     <img class="main__form-aside-img" src="img/checked-form.png" alt="checked">
                     <div class="main__form-aside-text">Свяжись с нами, получи консультацию и  решение твоей проблемы</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-popup">
+            <div class="pop-up">
+                <div class="pop-up__text">
 
                 </div>
             </div>
         </div>
     </main>
+
     <script src="js/main.js"></script>
 </body>
 </html>
