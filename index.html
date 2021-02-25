@@ -47,7 +47,7 @@
                 <p class="header__about-text">
                     IntOne SoftWare Development с радостью  выполнит качественный аудит состояния ИТ отдела и продукта в вашей компании и предложит правильные пути по оптимизации и снижению возможных рисков. Наши специалисты проведут анализ бизнес ниши и основных производственных процессов, проектной команды, а в сложных случаях – и самих информационных систем. Вместе с вами сформулируем пути оптимальные пути решения, которые сможем реализовать.
                 </p>
-                <video src=""></video>
+                <iframe class="video"  src="https://www.youtube.com/embed/kJeNbdWzk4U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="header__problems">
                 <div class="title">
@@ -70,27 +70,27 @@
                 <div class="header__problems-wrapper">
                     <div class="header__problems-column">
                         <div class="header__problems-item">
-                            <img src="img/checked.png" alt="checked-icon">
+                            <img class="checked-icon" src="img/checked.png" alt="checked-icon">
                            <p class="header__problems-text">Непредсказуемые расходы на ПО</p>
                         </div>
                         <div class="header__problems-item">
-                            <img src="img/checked.png" alt="checked-icon">
+                            <img class="checked-icon" src="img/checked.png" alt="checked-icon">
                             <p class="header__problems-text">Разработка софта затягивается и  не приносит результат</p>
                         </div>
                     </div>
                     <div class="header__problems-column">
                         <div class="header__problems-item">
-                            <img src="img/checked.png" alt="checked-icon">
+                            <img class="checked-icon" src="img/checked.png" alt="checked-icon">
                             <p class="header__problems-text">Система умирает от перегрузок</p>
                         </div>
                         <div class="header__problems-item">
-                            <img src="img/checked.png" alt="checked-icon">
+                            <img class="checked-icon" src="img/checked.png" alt="checked-icon">
                             <p class="header__problems-text">Нет понимания того, как устроен ИТ-отдел</p>
                         </div>
                     </div>
                 </div>
                 <p class="header__problems-text header__problems-text--bold">Лучше за смешную плату иметь открытый доступ к многим классным курсам, которые я проверил лично, чем тратить тысячи рублей на один курс.</p>
-                <a href="#form"> <button class="button header__button">
+                <a href="#scroll"> <button class="button header__button">
                     РЕШИТЬ ПРОБЛЕМУ
                 </button>
                 </a>
@@ -153,12 +153,15 @@
                     </div>
                 </div>
                 <img class="main__features-img" src="img/features-img.png" alt="img" >
+                <a href="#scroll" class="button--invisible"> <button class="button header__button">
+                    ПОЛУЧИТЬ ЧЕК-ЛИСТ
+                </button> </a>
             </div>
             <div class="main__upper-form-title">
                 Я или мой дежурный менеджер обязательно свяжется с вами для профессиональной консультации, совета или помощи в оформлении заказа.
             </div>
             <div class="main__form-wrapper">
-                <div class="main__form">
+                <div class="main__form main__form-no-padding " id="scroll">
                     <div class="main__form-title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ, И МЫ  ОТПРАВИМ ЧЕК-ЛИСТ</div>
                     <form class="form main__form" action="#" id="form">
                         <div class="main__form-item">
@@ -173,7 +176,7 @@
                             <div class="main__form-subtitle">Введите Ваш  номер телефона</div>
                             <input class="main__form-input" id="input-phone" type="text" name="phone" placeholder="+ 7 (903) 846 17 17" >
                         </div>
-                        <button class="button" id="submit-button" type="submit">ПОЛУЧИТЬ ЧЕК ЛИСТ</button>
+                        <button class="button form_button" id="submit-button" type="submit">ПОЛУЧИТЬ ЧЕК ЛИСТ</button>
                     </form>
                 </div>
 
@@ -194,7 +197,6 @@
         <div class="form-popup">
             <div class="pop-up">
                 <div class="pop-up__text">
-
                 </div>
             </div>
         </div>
