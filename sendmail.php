@@ -15,12 +15,12 @@ $mail->IsHTML(true);
 
 $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
 $mail->Username   = 'intonepost@yandex.ru'; // Логин на почте
-$mail->Password   = 'zrqmwnhcurcajlpq'; // Пароль на почте
+$mail->Password   = 'zrqmwnhcurcajlpq'; // Пароль приложения на почте
 $mail->SMTPSecure = 'ssl';
 $mail->Port       = 465;
 
 $mail->setFrom('intonepost@yandex.ru', 'Имя отправителя');
-$mail->addAddress('misha48535@gmail.com');
+$mail->addAddress(''); //куда отправлять 
 
 $name =$_POST['name'];
 $email =$_POST['email'];
